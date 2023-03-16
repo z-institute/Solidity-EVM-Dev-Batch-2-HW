@@ -5,7 +5,7 @@
 git clone https://github.com/z-institute/Solidity-EVM-Dev-Batch-1-HW.git --branch <ID>
 ```
 2. Please add the folder like main branch and push your homework to your own folder.
-## Github Basic Usage
+## GitHub Basic Usage
 * Upload code
 ```
 cd <dir>
