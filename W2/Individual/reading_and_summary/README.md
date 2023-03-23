@@ -28,3 +28,17 @@
     - Block header 中存有 Merkle Root，是透過 block body 中的交易資訊透過 hash 得到的字符，相當於 digital fingerprint，可以用來驗證資訊是否正確，以此確認交易。
 # [閱讀 ethereum white paper](https://ethereum.org/en/whitepaper/)
 - 寫下簡易筆記／心得
+由於 bitcoin 本身的限制，不容易基於該鏈發展應用，大大限縮了區塊鏈的發展與成長，ethereum 則是為了解決此問題，使創建去中心化應用程式變得容易。
+
+Ethereum 本身具備圖靈完備性 (bitcoin 不具備)
+
+### ethereum 應用
+- 代幣
+- 金融衍生產品
+- 身分認證系統
+- 分散式文件儲存
+- 去中心化自治組織
+- 儲蓄
+- 保險
+- 雲計算
+- etc.
