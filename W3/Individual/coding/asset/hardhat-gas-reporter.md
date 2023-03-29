@@ -12,9 +12,9 @@ npm install hardhat-gas-reporter --save-dev
 ```
 require("hardhat-gas-reporter");
 ```
-![](2023-03-29-21-48-50.png)
-3. 輸入下列指令執行 `solidity-coverage`
+![](2023-03-30-00-37-44.png)
+3. `hardhat-gas-reporter` 是跟隨著 `test` 指令一起輸出
 ```
-npx hardhat coverage
+npx hardhat test
 ```
-![](2023-03-29-22-15-16.png)
+![](2023-03-30-00-40-04.png)

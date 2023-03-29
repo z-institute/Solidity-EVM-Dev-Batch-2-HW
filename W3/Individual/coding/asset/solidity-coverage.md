@@ -12,7 +12,7 @@ npm install --save-dev solidity-coverage
 ```
 require("solidity-coverage");
 ```
-![](2023-03-29-22-05-22.png)
+![](2023-03-30-00-41-29.png)
 3. 輸入下列指令執行 `solidity-coverage`
 ```
 npx hardhat coverage

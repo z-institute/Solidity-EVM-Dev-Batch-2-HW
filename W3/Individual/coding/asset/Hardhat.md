@@ -8,7 +8,8 @@
 ```
 npm init -y
 npm install --save-dev hardhat
-npm install --save-dev @nomicfoundation/hardhat-toolbox
+npm install --save-dev @nomiclabs/hardhat-waffle
+npm install --save-dev @nomiclabs/hardhat-ethers
 npm install --save-dev chai
 ```
 2. 輸入下列指令，並選擇 `Create an empty hardhat.config.js` 來創建 Hardhat 設定檔
@@ -16,6 +17,12 @@ npm install --save-dev chai
 npx hardhat
 ```
 ![](2023-03-29-21-33-27.png)
+3. 在 `Create an empty hardhat.config.js` 中添加如下設定
+```
+require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-ethers");
+```
+![](2023-03-30-00-35-40.png)
 
 * 常用 Hardhat 指令
 ```
