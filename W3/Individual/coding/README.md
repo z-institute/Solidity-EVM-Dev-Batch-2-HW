@@ -34,7 +34,7 @@
 
 ### [2. solidity coverage](https://github.com/sc-forks/solidity-coverage/blob/master/HARDHAT_README.md)
 
-hardhat提供了一個查看當前我们編寫的測試代碼的功能覆蓋率的插件，叫做solidity-coverage，專門用於可靠性測試的代碼覆蓋率。
+hardhat提供了一個查看當前們編寫的測試代碼的功能覆蓋率的插件，叫做solidity-coverage，專門用於可靠性測試的代碼覆蓋率。
 
 <--- start --->
 
