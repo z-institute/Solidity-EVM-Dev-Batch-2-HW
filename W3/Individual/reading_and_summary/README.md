@@ -7,7 +7,7 @@
 [DeFi Attacks: Flash Loans and Centralized Price Oracles](https://insights.glassnode.com/defi-attacks-flash-loans-centralized-price-oracles/ )
 
 
-summary
+summary：
 ```
 1. The most common variant of this attack is the flash loan-funded price oracle attack. 
    These attacks use flash loans to exploit vulnerabilities in centralized price oracles, manipulate assets prices, and siphon funds from contracts.
@@ -26,7 +26,7 @@ summary
 8. Attack on Cheese Bank（https://etherscan.io/address/02b7165d0916e373f0235056a7e6fccdb82d2255）
 9. Conclusions: This kind of attack could have been executed by anyone with sufficient capital, but was made easier through the availability of flash loans. This string of attacks highlights the importance of DeFi protocols using decentralized price oracles.
 ```
-notice
+note：
 ```
 1. stop using single source price oracles.
 2. 避免使用中心化的 price oracles.
@@ -194,7 +194,7 @@ summary：
 - Bug Bounties List of bug bounties in the ecosystem.
 ```
 
-notice：
+note：
 ```
 1. When interacting with external contracts, name your variables, methods, and contract interfaces in a way that makes it clear that interacting with them is potentially unsafe.
 2. If you are making a call to an untrusted external contract, avoid state changes after the call.
@@ -227,7 +227,7 @@ summary：
    - Sustainability
 ```
 
-notice：
+note：
 ```
 1. Centralized oracles are a non-starter for smart contract applications. 
 2. 使用聲譽良好的 DON 服務
