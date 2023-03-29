@@ -38,7 +38,7 @@ Choose "import account", paste in a private key, and the import will be successf
 
 ### Ganache-cli 
 
-Open the terminal in vscode and enter the following command
+Open the terminal in vscode and enter the following command.
 
 ```
 npm install ganache --global
