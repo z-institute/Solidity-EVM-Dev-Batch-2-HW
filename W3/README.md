@@ -1,5 +1,4 @@
-# Week 3
-# Week3-Individual HW
+# Week3-Individual 
 
 Individual development project: Choose five or more development tools mentioned in class and write down their basic usage
 
@@ -51,8 +50,8 @@ Infura saves you time on building and managing your own Ethereum client.For exam
 
 ![](https://i.imgur.com/f8GyGsc.png)
 
-#### 2.Creat your project
-Click 'CREAT NEW API KEY', choose network and input project name.
+#### 2.Create your project
+Click 'CREATE NEW API KEY', choose network and input project name.
 
 ![](https://i.imgur.com/VxofWy5.png)
 ![](https://i.imgur.com/G0vCs3o.png)
@@ -102,18 +101,18 @@ Then, copy code you want and change it.
 We can research update contracts anytime on github!
 
 
-##### Scource:
+##### Source:
 https://blog.csdn.net/weixin_43411585/article/details/105338333
 https://github.com/OpenZeppelin/openzeppelin-contracts
 
 ----
 
-### Remixd
+### Remix IDE
 
 Click into plugin
 ![](https://i.imgur.com/jCAH8un.png)
 
-By using Remixd with vscode-Local during development, real-time compilation is possible, which makes it convenient to fix errors.
+By using Remix IDE with vscode-Local during development, real-time compilation is possible, which makes it convenient to fix errors.
 
 ![](https://i.imgur.com/dNAIZwE.png)
 
@@ -158,10 +157,6 @@ For example, Ethereum Mainnet ->Ethereum Fork
 
 
 Now, you can simulate operations using the fork.
-
----
- 
- 
 ## What aspects we should be considered when we are developing a secure smart contract?
 
 ### ConsenSys
@@ -224,7 +219,7 @@ Developer includes use automated testing tools and manual testing techniques, in
 
 ----
 
-##### Scource:
+##### Source:
 https://github.com/ConsenSys/smart-contract-best-practices/blob/master/README-zh.md
 https://insights.glassnode.com/defi-attacks-flash-loans-centralized-price-oracles/
 https://chain.link/education/blockchain-oracles
@@ -306,7 +301,7 @@ The import will be successful!
 `ganache-cli -d -f https://eth-mainnet.g.alchemy.com/v2/<key> -p 8545`
  
     
-#### 2. You may encounter erros and solutions were provided:
+#### 2. You may encounter errors and solutions were provided:
 
 ![](https://i.imgur.com/WFeuTJS.png)
     
