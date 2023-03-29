@@ -51,12 +51,12 @@ Chainlink network, which is a decentralized network of oracles that can be used 
 
 According to three articles, I conclude several suggesttions for avoiding attack problems.
 
-Developers code focuse on readability, simple and clear. When developer use clear variable and function names, and use an easily understandable code structure so that the contract ca to n be more easily maintained and upgraded. In the other word, they ensure that the code can be easily extended and upgraded to meet future needs and security issues.
+Developers code focus on readability, simple and clear. When developer use clear variable and function names, and use an easily understandable code structure so that the contract ca to n be more easily maintained and upgraded. In the other word, they ensure that the code can be easily extended and upgraded to meet future needs and security issues.
 
 To prevent more and more Flash loan-funded price oracle attack, developers can use blockchain oracle services like Chainlink to obtain reliable, decentralized price data to reduce problems caused by the failure of centralized price oracles.
 
 In summary, developers must follow the best practices of secure design and coding, the article also provide a lot of examples of good and bad code patterns to understand easily.
-Developerincludes use automated testing tools and manual testing techniques, invite others to review the code, and regularly update and maintain the contract to ensure the security and reliability of smart contracts.
+Developer includes use automated testing tools and manual testing techniques, invite others to review the code, and regularly update and maintain the contract to ensure the security and reliability of smart contracts.
 
 
 ----
