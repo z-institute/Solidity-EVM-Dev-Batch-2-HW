@@ -38,14 +38,14 @@ Choose "import account", paste in a private key, and the import will be successf
 
  ### Ganache-cli 
 
- Open the terminal in vsCode and enter the following command
+ Open the terminal in vscode and enter the following command
 
 ```
 npm install ganache --global
 ganache-cli -d -f https://eth-mainnet.g.alchemy.com/v2/<key> -p 8545  
 ```
 
- You will be able to see a success screen.
+You will be able to see a success screen.
 
 ![](https://i.imgur.com/YVcY8aJ.jpg)
 
@@ -87,17 +87,16 @@ const signer = await getZeroDevSigner({
 
 According to [demo](https://demo.zerodev.app/), there are three ways to use ZeroDev:
 
-
 - **Pay Gas for Users**: With ZeroDev, you can pay gas for your users, so they don't have to buy ETH before using your app.
 ```
 Note how our account is identified as a "contract" by the block explorer. 
 This is because in account abstraction, all accounts are smart contract accounts.
 ```
-Click the button to gas-free.
+Click the button to mint NFTs without paying gas.
+
 ![](https://i.imgur.com/a0yAXdH.png)
 
 - **Bundle Transactions**: With ZeroDev, you can execute multiple transactions as a single transaction, so you get to save on confirmation time and gas cost. It's also safer because these transactions either all execute or all revert, no in-between, which is a property known as "atomicity".You can see the demo screen and code.
-
 
 ![](https://i.imgur.com/Fp3RBT5.png)
 
@@ -116,10 +115,11 @@ await signer.execBatch([
 ])
 ```
 
-- **NFT Subscription**:Click "Subscribe" to subscribe to an NFT collection, then click "Release" to receive an NFT. Note that the "Release" is sent by the NFT creator, showing that your user can passively pay and receive NFTs.
+- **NFT Subscription**: Click "Subscribe" to subscribe to a NFT collection, then click "Release" to receive an NFT. Note that the "Release" is sent by the NFT creator, showing that your user can passively pay and receive NFTs.
+  
 ![](https://i.imgur.com/8H0sD28.png)
 
-These transation record in Polygonscan Mumbai.
+These transactions record in Polygonscan Mumbai.
 ![](https://i.imgur.com/Ubb8yAc.png)
 
 
@@ -132,19 +132,15 @@ These transation record in Polygonscan Mumbai.
 
 Stackup makes it easy to build custom web3 transactions flows and wallets using ERC-4337
 
-
 Stackup provides a fully managed paymaster service. We charge you the gas at the end of the month, so you only need to worry about the user experience.
 
-
 Stackup's account abstraction infrastructure makes it easy to bundle transactions together, turning complex sequences of transactions into simple one-click experiences for your users.
-
 
 ![](https://i.imgur.com/3uIbfzi.png)
 
 ![](https://i.imgur.com/sTN87cc.jpg)
 
-In the end, we can download the following command to get ERC-4337 Examples repository :
-
+In the end, we can enter the following command to clone the ERC-4337 examples:
 
 `git clone https://github.com/stackup-wallet/erc-4337-examples.git`
  
