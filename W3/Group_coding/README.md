@@ -1,4 +1,4 @@
-# Implement a Mainnet fork with Hardhat/Ganache-cli
+# Implement a Mainnet fork with Hardhat / Ganache-cli
 
 Run a local Ethereum Mainnet fork with Ganache-cli and connect MetaMask, following the steps below:
 
@@ -6,22 +6,22 @@ Run a local Ethereum Mainnet fork with Ganache-cli and connect MetaMask, followi
 ## 團體開發實作
 
 ### hardhat
-Register at https://www.alchemy.com/, go to Apps and click "VIEW KEY" to get the API key.
+Register at https://www.alchemy.com/ , go to Apps and click "VIEW KEY" to get the API key.
 
- ![](https://i.imgur.com/jWdHsM4.jpg)
+![](https://i.imgur.com/jWdHsM4.jpg)
 
 Open the terminal in vscode, and enter the following command.
 
 ```
 npx hardhat node --fork https://eth-mainnet.alchemyapi.io/v2/<key>
- ```
+```
 ![](https://i.imgur.com/iHIBCMI.jpg)
 
 After installing the environment, enter the command again.
 
 ```
 npx hardhat node --fork https://eth-mainnet.alchemyapi.io/v2/<key>
- ```
+```
 You will be able to see a success screen.
 
 ![](https://i.imgur.com/wGNTu2j.jpg)
@@ -31,14 +31,14 @@ If you didn't show localhost 8545, go to advanced and open the test network.
 
 Choose "import account", paste in a private key, and the import will be successful.
 
- ![](https://i.imgur.com/T4gQcJU.png)
+![](https://i.imgur.com/T4gQcJU.png)
  
 
- ![](https://i.imgur.com/Ujv3EPu.png)
+![](https://i.imgur.com/Ujv3EPu.png)
 
- ### Ganache-cli 
+### Ganache-cli 
 
- Open the terminal in vscode and enter the following command
+Open the terminal in vscode and enter the following command
 
 ```
 npm install ganache --global
@@ -120,6 +120,7 @@ await signer.execBatch([
 ![](https://i.imgur.com/8H0sD28.png)
 
 These transactions record in Polygonscan Mumbai.
+
 ![](https://i.imgur.com/Ubb8yAc.png)
 
 
