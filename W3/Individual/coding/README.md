@@ -3,7 +3,7 @@
 
 --- 
 
-### 1. VS code
+### 1. vscode
 
 <-- start -->
 
