@@ -7,6 +7,7 @@
 ### 智能合約開發工具
 
 * [在 Remix 上使用 REMIXD 套件連結本地資料夾](asset/Remix%20%2B%20REMIXD.md)
+* [在 Remix 上使用 ETHERSCAN - CONTRACT VERIFICATION 驗證智能合約](asset/Remix%20%2B%20ETHERSCAN%20-%20CONTRACT%20VERIFICATION.md)
 * [Infura API Key](asset/Infura%20API%20Key.md)
 * [在 VSCode 中使用 Solidity Contract Flattener 將智能合約中包含 import 一起完整複製](asset/VSCode%20%2B%20Solidity%20Contract%20Flattener.md)
 
