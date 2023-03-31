@@ -34,7 +34,7 @@
 
 ### [2. solidity coverage](https://github.com/sc-forks/solidity-coverage/blob/master/HARDHAT_README.md)
 
-hardhat提供了一個查看當前們編寫的測試代碼的功能覆蓋率的插件，叫做solidity-coverage，專門用於可靠性測試的代碼覆蓋率。
+hardhat 提供了一個查看當前我們編寫的測試代碼的功能覆蓋率的插件，叫做 solidity-coverage，專門用於可靠性測試的代碼覆蓋率。
 
 <--- start --->
 
@@ -66,9 +66,9 @@ npx hardhat coverage
 
 ### [3. chainlink oracle](https://chain.link/)
 
-在區塊鏈中，數據的公正性與獨立性至關重要，而ChainLink正是解決了中心化問題的去中心化預言機。
+在區塊鏈中，數據的公正性與獨立性至關重要，而 ChainLink 正是解決了中心化問題的去中心化預言機。
 
-所以可以把ChainLink想成提供數據服務的平台，只不過是更加及時的資訊，如各類加密貨幣價格，亦提供各項數據服務。
+所以可以把 ChainLink 想成提供數據服務的平台，只不過是更加及時的資訊，如各類加密貨幣價格，亦提供各項數據服務。
 
 <--- start --->
 
