@@ -3,7 +3,7 @@
 
         (參考資料 : [https://hardhat.org/hardhat-network/guides/mainnet-forking.html](https://hardhat.org/hardhat-network/guides/mainnet-forking.html))
 
-### 主網分岔的兩種方法 (Hardhat & Ganache-cli)
+### 使用本地主網分岔的兩種方法 (Hardhat & Ganache-cli)
 
 1. 參考 [Infura API Key](..\Individual\coding\asset\Infura%20API%20Key.md) 設置測試網
 2. 使用 Hardhat 分岔主網
@@ -28,11 +28,12 @@
 4. 打開 MetaMask 手動添加分岔網路
 ![](2023-03-29-23-44-46.png)
 ![](2023-03-29-23-45-12.png)
-5. 填入相關資訊，按下 `SAVE` 即可成功添加
-(`New RPC Url` 相當於 `https://mainnet.infura.io/v3/<key>`)
-![](2023-03-29-23-46-44.png)
-![](2023-03-29-23-47-41.png)
+![](2023-03-31-14-39-01.png)
+5. 使用步驟 2 或 3 的 private key 添加測試用帳號取得 ETH 測試幣
+![](2023-03-31-14-44-02.png)
+![](2023-03-31-14-44-26.png)
+![](2023-03-31-14-46-48.png)
 
-1. 加分題（optional）：
+6. 加分題（optional）：
     - 如果想跟上最新的區塊鏈開發者趨勢，可以用看看 [https://zerodev.app/](https://zerodev.app/) 與 [https://www.stackup.sh/](https://www.stackup.sh/) 並閱讀網站內的相關文章，對參加區塊鏈論壇和與產業人士交流非常有幫助，會讓人把你歸類為 insider，就算只是知道有這些工具的存在，能夠加入其他人的話題也很有幫助
         - 可以將使用心得與重點整理筆記提交至 GitHub README
