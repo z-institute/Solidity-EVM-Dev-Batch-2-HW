@@ -1,10 +1,5 @@
 # 個人作業
 
-## resume
-
-
-
----
 
 ## studying-solidity
 
@@ -821,7 +816,7 @@ contract Bet {
 
 ### Private Functions 
 
-就是私有函式，只能被自己合約所調用，也不會被繼承合約調用。
+私有函式，只能被自己合約所調用，也不會被繼承合約調用。
 
 A good rule of thumb for function visibility is to start by making a function private. **If it needs to be called by EOAs, make it external. If it needs to be called by both EOAs and other contracts, make it public.**
 
