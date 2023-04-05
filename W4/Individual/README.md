@@ -1,9 +1,7 @@
 # 個人作業
 
 
-## studying-solidity
-
-https://www.chainshot.com/md/studying-solidity
+## [studying-solidity](https://www.chainshot.com/md/studying-solidity)
 
 ![](https://i.imgur.com/bbQe7ym.png)
 
@@ -35,12 +33,12 @@ contract OnOffSwitch {
 First let's look at the familiar! Things that are similar to JavaScript:
 
 1. Comments appear to be the same! Both syntaxes: // comment and /* comment */
-1. The casing used is the same as JavaScript, it is lowerCamelCase
-1. Curly Braces {} seem to serve a similar purpose, marking scope
-1. Boolean values true/false which can be modified with boolean operators: !
+2. The casing used is the same as JavaScript, it is lowerCamelCase
+3. Curly Braces {} seem to serve a similar purpose, marking scope
+4. Boolean values true/false which can be modified with boolean operators: !
 1. The contract keyword seems a bit like JavaScript class, especially the constructor
 1. The function syntax looks a bit similar to JavaScript
-1. The return keyword is still used for passing a value back from a function
+2. The return keyword is still used for passing a value back from a function
 
 
 Now let's look at the dissimilarities:
@@ -883,11 +881,9 @@ event HighScore(address indexed player);
 ---
 
 
-## cryptozombies
+## [cryptozombies](https://cryptozombies.io/en/course)
 
-https://cryptozombies.io/en/course
-
-## Chapter 1: Lesson 1 
+### Chapter 1: Lesson 1 
 
 ![](https://i.imgur.com/hZM3gqW.jpg)
 
@@ -921,7 +917,7 @@ It's convention (but not required) to start function parameter variable names wi
 ---
 
 
-## Chapter 1: Lesson 2
+### Chapter 1: Lesson 2
 
 ![](https://i.imgur.com/lgHQsv8.jpg)
 
