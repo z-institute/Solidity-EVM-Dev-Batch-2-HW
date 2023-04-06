@@ -23,4 +23,8 @@
 
 5.  Remix - Ethereum IDE
     Install plugin: ETHERSCAN, REMIXD.
+<<<<<<< HEAD
     ![](https://i.imgur.com/lhEW0Jr.png)
+=======
+    ![](https://i.imgur.com/lhEW0Jr.png)
+>>>>>>> bd6d522797d7f0df6f1f9a8bb1aeffb971fadb3b
