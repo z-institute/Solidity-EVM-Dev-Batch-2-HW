@@ -20,6 +20,18 @@ Implement mainnet fork with hardhat, run ethereum local mainnet fork with ganach
 ### Excellent group homework
 - [Group 3](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W3/Group_coding) (Vera, YI JUN LIN, CHIH HSIEN CHEN)
 
+## Week 4 : Solidity Smart Contract Basic
+### Coding
+Complete all these lesson and summarize what you learn
+1. https://www.chainshot.com/learn/solidity
+2. https://cryptozombies.io/en/course
+### Group homework
+The first version of the smart contract for the graduation project.
+### Excellent homework
+- Z23034005 [(Vera)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W4/Individual)
+### Excellent group homework
+- [Group 2](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034003/W4/Group_coding) (Dan Hsu, Mavis)
+
 # Solidity-EVM-Dev-Batch-2-HW
 ## Usage
 1. Please clone your own brach and operate on it, the following commands are for your reference.
