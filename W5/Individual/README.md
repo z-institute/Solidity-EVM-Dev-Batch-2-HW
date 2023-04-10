@@ -12,19 +12,18 @@
     contract MyTokenUSDT is ERC20 {
         address private _tokenAddress = 0x17C8b71E5eE01A726766c99d397D619219C8CAF3;
 
-        constructor () ERC20 ("MyToken", "TTT"){}
+        constructor() ERC20("MyToken", "TTT") {}
 
         // use USDT to mint
         function mint() external {
             // need to do approve first (via script or UI), approve(0xcontract, 1000000)
-            IERC20(_tokenAddress).transferFrom(_msgSender(), address(this), 1000000);
+            IERC20(_tokenAddress).transferFrom(
+                _msgSender(),
+                address(this),
+                1000000
+            );
             _mint(_msgSender(), 1 ether);
         }
-
-        /* function mintByETH() external payable {
-            require(msg.value == 1 ether, "Not enough");
-            _mint(_msgSender(), 1 ether);
-        } */
 
         function balance() public view returns (uint256) {
             return IERC20(_tokenAddress).balanceOf(address(this));
