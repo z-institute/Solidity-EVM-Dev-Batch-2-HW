@@ -1,10 +1,10 @@
-# (week5) 個人開發實作 
+# 個人作業
 
 
 ## Coding1
 寫一個代幣合約，可以用 USDT 買到一個代幣、查到合約現有 USDT 餘額、與提款，提交完成程式碼，並附上成功買到代幣，查餘額跟提款在 remix 的截圖
 
-![](code1.gif)
+![image](code1.gif)
 
 ```
 <!--  代幣的 contract -->
@@ -44,7 +44,6 @@ contract myCustomToken is ERC20 {
 }
 ```
 
-
 ```
 <!--  USDT 的 contract -->
 
@@ -76,6 +75,19 @@ contract TetherToken is ERC20{
 }
 ```
 
+// 成功的mint
+
+![](https://i.imgur.com/TC9Txtm.png)
+
+// 成功查餘額
+
+![](https://i.imgur.com/jrGXjXk.png)
+
+// 成功的 withdraw
+
+![](https://i.imgur.com/RjymfAf.png)
+
+![](https://i.imgur.com/P6surzX.png)
 
 ---
 
@@ -92,8 +104,10 @@ contract TetherToken is ERC20{
 
 
 > Q1.不知道怎麼扣兩種幣，是直接在 mint() 裡面 transfer 兩次嗎
+
 > Q2.當我需要用到 v-token 幣的合約在 NFT 合約時，能怎麼做
-> Q3.MyToken可以用ERC20()取代嗎
+
+> Q3.MyToken 可以用 ERC20() 取代嗎
 
 ```
 //SPDX-License-Identifier: MIT
@@ -139,8 +153,7 @@ contract myNft is Ownable, ERC1155 {
 
     uint256 public constant MAX_MINT = 5;
     // _tokenAddress 為我部署我的 v-token 地址
-    address private constant _tokenAddress =
-        0xAe2563b4315469bF6bdD41A6ea26157dE57Ed94e;
+    address private constant _tokenAddress = 0X0...;
     
     constructor(string memory _uri) ERC1155(_uri) {
     }
@@ -314,7 +327,7 @@ cd uniswapper-scaffold
 
 yarn install
 
-// 需要等另外一個終端機 yarn fork 成功後再run
+// 需要等另外一個終端機 yarn fork 成功後再 run
 yarn start
 ```
 
