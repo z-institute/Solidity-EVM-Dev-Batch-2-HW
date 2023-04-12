@@ -5,8 +5,6 @@
 ![](https://i.imgur.com/AILEsqF.png)
 
 ![](https://i.imgur.com/1mzPlMq.png)
- 複製地址到My Contract
- ![](https://i.imgur.com/O3atamU.png)
 
 ### 2. 寫可以用 USDT 買到一個代幣合約
 ##### 需先授權使用USDT，才能mint
