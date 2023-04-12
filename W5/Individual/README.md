@@ -2,21 +2,29 @@
 ### 1. 寫一個USDT智能合約，發布USDT
 
 因為USDT從我的帳號轉出，用remix UI方式，設定一個假的USDT合約
+
 ![](https://i.imgur.com/AILEsqF.png)
 
 ![](https://i.imgur.com/1mzPlMq.png)
+
  複製地址到My Contract
+
  ![](https://i.imgur.com/O3atamU.png)
 
 ### 2. 寫可以用 USDT 買到一個代幣合約
 ##### 需先授權使用USDT，才能mint
+
 ![](https://i.imgur.com/bGsMAxv.png)
+
 #### code
+
 ![](https://i.imgur.com/MPMtq75.png)
 
 #### 查到合約現有 USDT 餘額
+
 ![](https://i.imgur.com/GPCaMHH.png)
 ![](https://i.imgur.com/qCHHKjf.png)
+
 #### 提款
 ![](https://i.imgur.com/0A83Mfj.png)
 ![](https://i.imgur.com/XJTvMd8.png)
@@ -28,13 +36,16 @@
 ## 寫一個 NFT 合約，需要同時付以上的 ERC20 代幣加上 0.1 ETH 才能 mint 到，並且可以更新 token URI，每個地址只能 mint 5 個，提交完成程式碼，並附上截圖
 
 ### 分解需求:
+
 NFT + 足夠的 (ERC20代幣 & ETH) + 每個最大限mint * 5 (mint counts) + 更新 token URI
 
 ### 程式碼
 #### 1.NFT初始化
+
 ![](https://i.imgur.com/7q3rwV0.png)
 
 #### 2.需要足夠的ERC20代幣 & ETH + 每個最大限mint supply 5個(含mint counts)
+
 ![](https://i.imgur.com/sFzaFwH.png)
 
 #### 3. 更新mint counts + index + token URI
@@ -84,6 +95,7 @@ yarn chain
 ```
 ### 2. Start a local networK
 You should see something like this:
+
 ![](https://i.imgur.com/f2jcJGR.png)
 
 
@@ -96,6 +108,7 @@ yarn deploy
 
 ```
 You should see something like this:
+
 ![](https://i.imgur.com/xhGbADz.png)
 
 
