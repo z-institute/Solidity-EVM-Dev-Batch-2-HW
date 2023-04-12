@@ -131,3 +131,21 @@
     }
     ```
 3. 加分題：先閱讀：[https://azfuller20.medium.com/swap-with-uniswap-wip-f15923349b3d](https://azfuller20.medium.com/swap-with-uniswap-wip-f15923349b3d) 再跟著指示跑起這個專案 [https://docs.scaffoldeth.io/scaffold-eth/examples-branches/defi/uniswapper](https://docs.scaffoldeth.io/scaffold-eth/examples-branches/defi/uniswapper) 對於 DeFi 了解會加深很多，下次上課會講到，建議可以先看比較跟得上
+
+    ![](2023-04-12-23-33-05.png)
+
+    ```
+    # 終端機 1
+    git clone -b uniswapper https://github.com/scaffold-eth/scaffold-eth-examples.git uniswapper-scaffold
+    cd uniswapper-scaffold
+    yarn install
+
+    # 終端機 2
+    yarn fork
+
+    # 終端機 1
+    set NODE_OPTIONS=--openssl-legacy-provider # 若沒有加這句，會啟動失敗
+    yarn start
+    ```
+   - error message
+    ![](2023-04-12-23-29-51.png)
