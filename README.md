@@ -32,6 +32,18 @@ The first version of the smart contract for the graduation project.
 ### Excellent group homework
 - [Group 2](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034003/W4/Group_coding) (Dan Hsu, Mavis)
 
+## Week 5 : Solidity Smart Contract Analysis
+### Coding
+1. Write a token contract that allows the purchase of a token using USDT, checks the current USDT balance of the contract, and allows withdrawals. Submit the completed code along with screenshots of successfully purchasing a token, checking the balance, and making a withdrawal on Remix.
+2. Write an NFT contract that requires the payment of ERC20 tokens and 0.1 ETH to mint. It should also allow for updating the token URI and limit minting to 5 per address. Submit the completed code and include screenshots.
+### Group homework
+The second version of the smart contract for the graduation project.
+### Excellent homework
+- Z23034002 [(LI CHIH HUNG)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034002/W5/Individual)
+- Z23034005 [(Vera)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W5/Individual)
+### Excellent group homework
+- [Group 3](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W5/Group_coding) (Vera, YI JUN LIN, CHIH HSIEN CHEN)
+
 # Solidity-EVM-Dev-Batch-2-HW
 ## Usage
 1. Please clone your own brach and operate on it, the following commands are for your reference.
