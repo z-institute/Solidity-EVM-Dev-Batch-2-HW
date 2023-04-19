@@ -33,6 +33,16 @@
          <img width="1079" alt="image" src="https://user-images.githubusercontent.com/50972884/233131567-dee116b5-6fcb-4853-b454-649552a2f0c4.png">
 
        - fulfillRandomWords (<- Callback by Chainlink VRF) 
+       
+        <img width="1413" alt="image" src="https://user-images.githubusercontent.com/50972884/233143287-b35638ee-613e-42de-9d5a-6e77aa2614ec.png">
+
+        <img width="1494" alt="image" src="https://user-images.githubusercontent.com/50972884/233143355-77cb51d8-fb46-489d-abc7-dbfc3c8638d3.png">
+
+        The returned two random number are:
+        - 100483367765334522954510812727772571635354320205677136576264592449505173831133
+        - 72158507902054012182107666183486671829555566516640719739116182145637510478154
+        
+        這邊有個問題：Chainlink call function fulfillRandomWords() 時在這個 Contract 的 transaction 上是否應該會有紀錄？
     
     b. 方法二 Direct Funding Method
     
