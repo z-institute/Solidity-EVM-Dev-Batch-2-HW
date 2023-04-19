@@ -6,10 +6,13 @@
 ![](https://i.imgur.com/AILEsqF.png)
 
 ![](https://i.imgur.com/1mzPlMq.png)
+<<<<<<< HEAD
 
  複製地址到My Contract
 
  ![](https://i.imgur.com/O3atamU.png)
+=======
+>>>>>>> d373e8a0c6c06d6a9a0174415e3a06a19194c3a3
 
 ### 2. 寫可以用 USDT 買到一個代幣合約
 ##### 需先授權使用USDT，才能mint

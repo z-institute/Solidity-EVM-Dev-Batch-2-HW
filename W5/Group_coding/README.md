@@ -4,6 +4,10 @@
 ### 首頁 v1
 
 ![](https://i.imgur.com/LHVbCAp.png)
+<<<<<<< HEAD
+=======
+* 工具:Figma 
+>>>>>>> d373e8a0c6c06d6a9a0174415e3a06a19194c3a3
 
 * 繪製工具：Figma
 * 標題字會使用霓虹效果，但不知道怎麼在 figma 使用出來，旁邊的 card，會有動態刮開效果，可能會使用 gif 或 animation 做。
