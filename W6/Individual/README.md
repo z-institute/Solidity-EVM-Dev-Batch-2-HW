@@ -48,6 +48,20 @@
     
     - link: [https://docs.chain.link/vrf/v2/direct-funding/examples/get-a-random-number/](https://docs.chain.link/vrf/v2/direct-funding/examples/get-a-random-number/)
 
+    - Deploy Contract
+
+        -  Need to get VRF Wrapper address
+
+            - link: [https://docs.chain.link/vrf/v2/direct-funding/supported-networks/](https://docs.chain.link/vrf/v2/direct-funding/supported-networks/)
+
+        -  Source code - DirectFundingMethodVRF.sol
+
+    - Execute
+
+       - requestRandomWords
+
+       - fulfillRandomWords (<- Callback by Chainlink VRF) 
+
     c. 簡述 VRF 運作原理
 
     d. 兩種方法的差異
