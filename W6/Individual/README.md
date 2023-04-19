@@ -60,7 +60,7 @@ The direct funding method does not require you to create subscriptions and pre-f
 
 --
 
-[Subscription Method](https://docs.chain.link/vrf/v2/subscription/examples/get-a-random-number)：
+### [Subscription Method](https://docs.chain.link/vrf/v2/subscription/examples/get-a-random-number)：
 The Subscription Manager lets you create an account and pre-pay for VRF v2, so you don’t provide funding each time your application requests randomness. This reduces the total gas cost to use VRF v2.
 
 --
