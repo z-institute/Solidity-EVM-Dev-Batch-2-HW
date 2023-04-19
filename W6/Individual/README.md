@@ -28,17 +28,17 @@
      
      - Execute
 
-       - requestRandomWords
+       - requestRandomWords()
         
          <img width="1079" alt="image" src="https://user-images.githubusercontent.com/50972884/233131567-dee116b5-6fcb-4853-b454-649552a2f0c4.png">
 
-       - fulfillRandomWords (<- Callback by Chainlink VRF) 
+       - fulfillRandomWords() (<- Callback by Chainlink VRF) 
        
         <img width="1413" alt="image" src="https://user-images.githubusercontent.com/50972884/233143287-b35638ee-613e-42de-9d5a-6e77aa2614ec.png">
 
         <img width="1494" alt="image" src="https://user-images.githubusercontent.com/50972884/233143355-77cb51d8-fb46-489d-abc7-dbfc3c8638d3.png">
 
-        The returned two random number are:
+        The returned two random numbers are:
         - 100483367765334522954510812727772571635354320205677136576264592449505173831133
         - 72158507902054012182107666183486671829555566516640719739116182145637510478154
         
@@ -56,11 +56,21 @@
 
         -  Source code - DirectFundingMethodVRF.sol
 
+            <img width="1488" alt="image" src="https://user-images.githubusercontent.com/50972884/233170287-abc5dfcc-7490-4d3f-bb43-4b9c7e191aec.png">
+
     - Execute
 
-       - requestRandomWords
+       - requestRandomWords()
 
-       - fulfillRandomWords (<- Callback by Chainlink VRF) 
+         <img width="1092" alt="image" src="https://user-images.githubusercontent.com/50972884/233172801-24479f95-98b7-4e21-919b-ff50ca7cca67.png">
+
+       - fulfillRandomWords() (<- Callback by Chainlink VRF) 
+         
+         <img width="1490" alt="image" src="https://user-images.githubusercontent.com/50972884/233174069-b866781d-a493-477f-aa90-86a732b9c57c.png">
+         
+         The returned two random numbers are:
+         - 39306645323753105006199481687228324203214575728951470024127717370062361884749
+         - 67171372413566424223042161612381560581061553659481704399349577637596742266512
 
     c. 簡述 VRF 運作原理
 
@@ -71,6 +81,8 @@
     Direct Funding Method 則是一種執行即付費型的使用方式。根據官方文件描述，這種方式不需要 subscription 且適合一次性的隨機數產生需求。尤其是對於用戶會支付費用的項目而言，這是很適合的方式，因為在 request 時就會需要支付。
    
     由此我們也可以看出來，兩個方法在 Link Token 的花費時機上也有差異，subcription method 是在 callback function `fulfillRandomWords` 時才會花費，而 direct funding method 則是在 request function `requestRandomWords` 時就會花費。
+    
+    實際兩種方式都練習過後會覺得 Direct Funding Method 在真的實作的時候可能還要先多做一個把 Link 存到 Contract 裡面的行為，整體來說會比 Subscription 多一個交易。
     
 2. 試跑此專案提供成功跑起的相關截圖，再簡述跨鏈橋運作原理：[https://github.com/z-institute/bsc-eth-bridge](https://github.com/z-institute/bsc-eth-bridge)
 
