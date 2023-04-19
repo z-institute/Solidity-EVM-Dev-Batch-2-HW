@@ -383,6 +383,13 @@ run "Fully working example for Remix" 的 code
 
 ![](https://i.imgur.com/gVOSxUs.png)
 
+* 恆定乘積原理 x * y = k
+* Uniswap 的三種角色
+    1. 成交者：用一種資產交換另一種資產；
+    2. 流動性提供者（LP） ：願意將自己的資產組合貢獻出來，幫助他人進行兌換，獲得一定費用；
+    3. 套利者：發現價值凹地，比如從 UNISWAP 中低價買入到市場上去賣出，以賺取一定利潤。
+*  K 不變的情況下，需要改變的是兌換費和流動性。
+
 ---
 
 
@@ -390,3 +397,4 @@ run "Fully working example for Remix" 的 code
 
 [追求真理：++i为何比i++执行效率高？](https://blog.csdn.net/DP29syM41zyGndVF/article/details/100012591)
 
+[Uniswap V3 原理解析](https://mirror.xyz/0xCf19c7444b775f4fede9b7B53b4d708338004aa4/vC-wd8t-Z2cXdpV3jKQsagoGHrRNMRAp-LDPISQ71CA)
