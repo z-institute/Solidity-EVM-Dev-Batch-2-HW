@@ -159,7 +159,7 @@ step3:
 deploy contract
 
 ```
-truffle migrate --reset --network sepoliaTestnet
+truffle migrate --reset --network sepolia
 truffle migrate --reset --network bscTestnet
 ```
 
