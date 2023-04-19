@@ -214,7 +214,7 @@ step6:
 
 Transfer token (the bridge will listen to the event and do the bridging after transfer)
 
-step4 發現我的金額只有 1，所以這邊的 amount 最多只能設定 1，不然會失敗
+step4 因為我的金額只有 1，所以這邊的 amount 最多只能設定 1，不然會失敗
 
 ![](https://i.imgur.com/HPkiRAY.png)
 
