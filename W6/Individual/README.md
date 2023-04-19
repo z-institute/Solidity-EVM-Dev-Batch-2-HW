@@ -52,8 +52,11 @@
 
     d. 兩種方法的差異
     
-    根據 Chainlink 官方原文描述 “The Subscription Manager lets you create a subcription and pre-pay for VRF v2 so you don’t need to provide funding each time your application requests randomness.”
-    由此可以見，Subscription Method 是一種預付充值型的使用方式，可以透過 `fulfillRandomWords` function 內程式的長度再搭配官方的公式推算出 minimum subscription balance 是多少。這種方式蠻適合產品運作規範已經定義且不太會變化的項目，可以很清楚的規劃出產品在 Chainlink VRF 上的運作成本然後事先儲值進去。
+    根據 Chainlink 官方文件描述可以得知，首先 Subscription Method 是一種預付充值型的使用方式，可以透過 `fulfillRandomWords` function 內程式的長度再搭配官方的公式推算出 minimum subscription balance 是多少。這種方式蠻適合產品運作規範已經定義且不太會變化的項目，可以很清楚的規劃出產品在 Chainlink VRF 上的運作成本然後事先儲值進去。
+
+    Direct Funding Method 則是一種執行即付費型的使用方式。根據官方文件描述，這種方式不需要 subscription 且適合一次性的隨機數產生需求。尤其是對於用戶會支付費用的項目而言，這是很適合的方式，因為在 request 時就會需要支付。
+   
+    由此我們也可以看出來，兩個方法在 Link Token 的花費時機上也有差異，subcription method 是在 callback function `fulfillRandomWords` 時才會花費，而 direct funding method 則是在 request function `requestRandomWords` 時就會花費。
     
 2. 試跑此專案提供成功跑起的相關截圖，再簡述跨鏈橋運作原理：[https://github.com/z-institute/bsc-eth-bridge](https://github.com/z-institute/bsc-eth-bridge)
 
