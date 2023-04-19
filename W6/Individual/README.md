@@ -180,7 +180,7 @@ https://docs.bscscan.com/misc-tools-and-utilities/public-rpc-nodes)
     },
 ```
 
-https://sepolia.etherscan.io/tx/0xb44d6419ea783b35f2c0a98a58a9902d69af251f9bc4fc39ea9d859966ebe290
+<!-- https://sepolia.etherscan.io/tx/0xb44d6419ea783b35f2c0a98a58a9902d69af251f9bc4fc39ea9d859966ebe290 -->
 
 
 ![](https://i.imgur.com/CcuSocz.png)
@@ -201,11 +201,12 @@ step5:
 
 Run the bridge script (keep the script opened in a separate terminal)
 
-![](https://i.imgur.com/jKQN3S7.jpg)
-
 ```
  node scripts/eth-bsc-bridge.js
 ```
+
+
+![](https://i.imgur.com/jKQN3S7.jpg)
 
 --
 
@@ -217,11 +218,12 @@ step4 發現我的金額只有 1，所以這邊的 amount 最多只能設定 1�
 
 ![](https://i.imgur.com/HPkiRAY.png)
 
-![](https://i.imgur.com/kABLXhm.jpg)
-
 ```
 truffle exec scripts/eth-bsc-transfer.js --network sepolia  
 ```
+
+
+![](https://i.imgur.com/kABLXhm.jpg)
 
 --
 
@@ -230,15 +232,12 @@ step7:
 
 成功轉移！
 
-![](https://i.imgur.com/5Lammk7.png)
-
 ```
 truffle exec scripts/eth-token-balance.js --network sepolia   
 truffle exec scripts/bsc-token-balance.js --network bscTestnet 
 ```
 
-
-
+![](https://i.imgur.com/5Lammk7.png)
 
 ---
 
