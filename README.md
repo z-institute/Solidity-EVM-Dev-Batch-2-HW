@@ -44,6 +44,22 @@ The second version of the smart contract for the graduation project.
 ### Excellent group homework
 - [Group 3](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W5/Group_coding) (Vera, YI JUN LIN, CHIH HSIEN CHEN)
 
+## Week 6 : Solidity Smart Contract Libraries and Use Cases
+### Reading
+- https://solidity-by-example.org
+### Coding
+1. Follow these two tutorials step-by-step, provide relevant screenshots, and then explain the working principle of VRF and the differences between the two methods.
+  - https://docs.chain.link/vrf/v2/subscription/examples/get-a-random-number#request-random-values
+  - https://docs.chain.link/vrf/v2/direct-funding/examples/get-a-random-number
+2. Try running this project and provide relevant screenshots of successful execution, then explain the working principle of cross-chain bridges : https://github.com/z-institute/bsc-eth-bridge
+### Group homework
+Collaborate to complete all Ethernaut challenges : https://ethernaut.openzeppelin.com
+### Excellent homework
+- Z23034005 [(Vera)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W6/Individual)
+- Z23034006 [(YI JUN LIN)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034006/W6/Individual)
+### Excellent group homework
+- [Group 3](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W6/Group_coding) (Vera, YI JUN LIN, CHIH HSIEN CHEN)
+
 # Solidity-EVM-Dev-Batch-2-HW
 ## Usage
 1. Please clone your own brach and operate on it, the following commands are for your reference.
