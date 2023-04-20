@@ -73,6 +73,19 @@
          - 67171372413566424223042161612381560581061553659481704399349577637596742266512
 
     c. 簡述 VRF 運作原理
+    
+      VRF 的運作上有四個階段，分別是
+      1. Request
+      2. Generate Random Words and Proof Sending
+      3. Verify it
+      4. Fullfill
+
+      Request 階段就是透過合約去呼叫 VRF Coordinator 要求要隨機數，VRF Coordinator 就會要求隨機數的事件。另一邊，Chainlink 有一個 VRF Service 會保持監聽鏈上有無 VRF Coordinator 要求隨機數，當它監聽到事件時就會進入 Generate Random Words and Proof Sending 階段。根據官方資料，VRF 的輸入會包含一組金鑰（公鑰和私鑰）與一個 seed。其中私鑰和 seed 會用來產生隨機數。接著這組隨機數上鏈之後，就可以用公鑰來驗證這組隨機數。最後一個階段，VRF Coordinator 會呼叫合約內的 fullfill function 來傳回生成的隨機數。
+      
+      reference link:
+      - https://www.leewayhertz.com/what-is-chainlink-vrf/#:~:text=Every%20time%20a%20new%20request,utilized%20by%20other%20consuming%20applications.
+      - https://chain.link/education-hub/verifiable-random-function-vrf
+      - https://docs.chain.link/vrf/v2/subscription
 
     d. 兩種方法的差異
     
