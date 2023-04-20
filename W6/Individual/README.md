@@ -87,8 +87,57 @@
 2. 試跑此專案提供成功跑起的相關截圖，再簡述跨鏈橋運作原理：[https://github.com/z-institute/bsc-eth-bridge](https://github.com/z-institute/bsc-eth-bridge)
 
     a. 專案執行完成截圖
+    
+    Follow the guide on project readme
+    
+    - truffle compile
+        
+    <img width="1160" alt="image" src="https://user-images.githubusercontent.com/50972884/233265604-dabfb8ec-18b2-4fe5-af4f-886207e0223f.png">
+
+    - Modified setting in truffle-config.js
+        - Change private key or mnemonic to my personal test wallet
+        - Change ethTestnet rpc endpoint and network_id to sepolia
+        
+        <img width="545" alt="Screenshot 2023-04-20 at 1 24 42 PM" src="https://user-images.githubusercontent.com/50972884/233266415-d0d8ceb6-64f2-4f07-8426-b4809bd4ef3f.png">
+            
+    - Get test ETH and test BNB in wallet
+        
+        ![image](https://user-images.githubusercontent.com/50972884/233267481-f0904364-a529-4cbb-9c6f-8ab2afb3ce12.png)
+
+    - Deploy contract to Sepolia testnet
+        
+       <img width="1158" alt="image" src="https://user-images.githubusercontent.com/50972884/233268060-a06aea59-82b3-475e-a3de-bf8417e0f2f4.png">
+       
+       <img width="1153" alt="image" src="https://user-images.githubusercontent.com/50972884/233268107-e3e2cf67-6f3b-462e-b4e3-9927ff15fa5a.png">
+        
+    - Deploy contract to BSC testnet
+    
+       <img width="1148" alt="image" src="https://user-images.githubusercontent.com/50972884/233268583-742844f3-c1b4-44bf-bc7d-7631cabedb75.png">
+       
+       <img width="1161" alt="image" src="https://user-images.githubusercontent.com/50972884/233268627-b1119807-7a9d-4351-8126-157b9d4bb930.png">
+
+    - Check token balance before transfer (the first one should be 1000 and the second one should be 0)
+    
+       <img width="812" alt="image" src="https://user-images.githubusercontent.com/50972884/233269738-9b3e00b1-90d8-4c1c-9945-0cb45b4f10cc.png">
+    
+    - Run the bridge script (keep the script opened in a separate terminal)
+      - Change adminPrivKey to my personal test wallet
+      - Change ethTestnet rpc endpoint and network_id to sepolia
+    
+      <img width="1436" alt="image" src="https://user-images.githubusercontent.com/50972884/233270579-0e66fa8a-843c-49e4-a25c-b00adeea564c.png">
+    
+    - Transfer token (the bridge will listen to the event and do the bridging after transfer)
+      - Change privKey to my personal test wallet
+      
+      <img width="1448" alt="image" src="https://user-images.githubusercontent.com/50972884/233272299-202b8f4a-202e-414f-b2fe-ab8339d8c98e.png">
+
+    - Check token balance after transfer
+    
+      <img width="715" alt="image" src="https://user-images.githubusercontent.com/50972884/233272419-3a419886-9e01-41aa-b0bf-68c86ecb4066.png">
 
     b. 簡述跨鏈橋運作原理
+    
+       跨鏈橋的概念跟借貸有一些相似，思考方向是“如何讓資產位於不同鏈上時擁有同等的**價值**”。我們可以把每條公鏈想像成獨立的金融體系，我們希望將 A 體系的資產“跨”到 B 體系，就是一個等價映射。對於 B 體系而言，因為雙方是完全獨立，來自 A 體系的資產沒有特殊原因的話是沒有價值的。而讓 A 體系資產在 B 體系上存在價值的一個方法就是抵押證明。所以常見的跨鏈橋做法是，用戶必須先在 A 公鏈上“鎖住”想跨練的 Token，然後在 B 公鏈上 Mint 出等量的 Token，而這些在 B 公鏈上出現的 Token 其價值擔保來源於用戶鎖在 A 公鏈的 Token，如果有什麼意外風險發生時，還可以從這些鎖住的 Token 得到補償。在這樣的前提下，跨鏈橋的資產意義就建立了。技術上就運用相同的概念執行，然後當 User 想要把資產跨回到 A 公鏈時，要先把 B 公鏈的 Token 送回跨鏈橋協議。跨鏈橋協議可能會燒毀或是隔離掉這些 Token，然後再將 A 公鏈上“鎖住”的 Token 解鎖還給 User。
 
 3. 閱讀 Solidity by example: [https://solidity-by-example.org](https://solidity-by-example.org)，可能會出現在未來隨堂考 😛
 4. [加分作業，難度較高] Follow 此教學並提供完成截圖，用自己的話寫下對 Uniswap V3 的運作模式理解：[https://soliditydeveloper.com/uniswap3](https://soliditydeveloper.com/uniswap3)
