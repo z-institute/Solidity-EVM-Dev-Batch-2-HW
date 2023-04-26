@@ -17,72 +17,142 @@
 
 
 ```
+user.sol
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-// User 包括賬戶餘額、訂票歷史等
 contract User {
-    address public owner; 
-    uint public balance; 
-    uint[] public orderIds;
-    
-    // key: 訂單 ID / value: Order
-    mapping(uint => Order) public orders;
-    
-    // 訂單
-    struct Order {
-        uint id; // 訂單 ID
-        uint timestamp; // 下單時間
-        address seller; // 第三方賣家地址
-        uint price; // 訂單價格
-        uint amount; // 訂單數量
-        bool canceled; // 訂單是否已取消
+
+    // 使用者 
+    struct userData {
+        uint userId; // 使用者 ID
+        uint timestamp; // 使用者創建時間
+        address userAddress; // 使用者地址
+        uint identity; //使用者身份 1.平台商（我們）/2.售票活動商/3.消費者
     }
 
+    uint userId; // userId 需要寫入 userData 嗎
+    mapping (address => userData) public users;
 
-    // 專案初始化，建立 User 合約
-    constructor() {
-        owner = msg.sender;
-    }
+    constructor() {}
 
-    // 存款
-    function deposit() public payable {
-        balance += msg.value;
-    }
+    // ::todo 
+    // 需要判斷使用者身份為何
 
-    // 提款
-    function withdraw(uint amount) public {
-        require(amount <= balance, "餘額不足");
-        balance -= amount;
-        payable(owner).transfer(amount);
-    }
-
-    // 購買門票，創建一個新的訂單
-    function buyTicket(address seller, uint price, uint amount) public returns (uint) {
-        require(amount > 0, "購買數量需大於 0");
-        require(price > 0, "門票價格需大於 0");
-        require(balance >= price * amount, "餘額不足");
-
-        uint id = orderIds.length + 1;
-        Order memory order = Order(id, block.timestamp, seller, price, amount, false);
-        orders[id] = order;
-        orderIds.push(id);
-
-        balance -= price * amount;
-
-        return id;
-    }
-
-    // 取消訂單
-    function cancelOrder(uint id) public {
-        require(msg.sender == owner, "您不是訂單擁有者");
-        require(orders[id].id == id, "訂單不存在");
-        require(!orders[id].canceled, "訂單已取消");
-
-        orders[id].canceled = true;
-        balance += orders[id].price * orders[id].amount;
-    }
+    // create user
+    function createUser(){}
+    // delete user
+    function deleteUser(){}
 }
 ```
+
+order.sol
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+
+contract Order {
+    // 訂單
+    struct orderData {
+        uint orderId; // 訂單 ID
+        uint timestamp; // 訂單時間
+        address buyer; // 買家地址
+        uint price; // 訂單價格
+        uint amount; // 訂單數量
+        bool canceled; // 訂單是否取消
+    }
+
+    uint orderId; 
+    mapping (address => orderData) public orders;
+
+    constructor() {}
+
+
+    // ::todo 
+    // orderList 
+}
+
+```
+
+
+ticket.sol
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+
+contract Ticket {
+
+    // 票
+    struct ticketData {
+        uint ticketId; // 票 ID
+        uint timestamp; // 購票時間
+        address buyer; // 買家地址
+        uint price; // 票價格
+        uint amount; // 票數量
+        bool use; // 票是否使用
+    }
+
+    uint ticketId;
+    mapping (address => ticketData) public tickets;
+
+    constructor() {}
+
+    // :: todo 
+    // 加價購 NFT
+
+    // :: question
+    // 1. 如何存取一個人擁有不同活動場次的票（mapping可以嗎）
+    // 2. 主辦提款是放在這裡嗎
+
+    // 預期要做的function
+    // 買票
+    function () external payable{
+        buyTikcet();
+    }
+    function buyTikcet() private{}
+    // 退票
+    function cancelTicket(address event, uint price, uint amount) external {}
+    // 使用票/驗票
+    function verify(bytes32 _ticket) external view returns(bool){}
+    //平台方提款 
+    function withdraw() external{}
+}
+
+```
+
+event.sol
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+
+contract Event {
+
+    // 活動
+    struct eventData {
+        uint eventId; // 活動 ID
+        uint timestamp; // 活動時間
+        address seller; // 第三方賣家地址
+        uint price; // 活動價格
+        uint amount; // 活動數量
+        bool online; // 活動是否上線
+    }
+
+    uint eventId;
+    mapping (address => eventData) public events;
+
+    constructor() {}
+
+    // ::todo 
+    // 創建活動
+    // 撤下活動
+}
+```
+
 
 參考資料:https://creately.com/guides/flowchart-guide-flowchart-tutorial/
