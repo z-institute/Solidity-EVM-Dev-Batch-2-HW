@@ -75,7 +75,7 @@ brownie run scripts/get_weth.py --network goerli
 
 ![](https://i.imgur.com/vHooQSD.png)
 
-這裡因為 goerliEth 不夠，所以到[Goerli PoW Faucet](https://goerli-faucet.pk910.de/) mint
+這裡因為 goerliEth 不夠，所以到 [Goerli PoW Faucet](https://goerli-faucet.pk910.de/) mint
 
 ![](https://i.imgur.com/ball15b.png)
 
