@@ -6,7 +6,7 @@
 - Liquid Staking
 - User Flow Chart
 
-![Screenshot 2023-04-21 at 10.12.43 AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f7ff3d95-3bad-42d1-828e-4240703b49da/Screenshot_2023-04-21_at_10.12.43_AM.png)
+![](https://i.imgur.com/YJwFO1e.png)
 
 # 補充教材
 
