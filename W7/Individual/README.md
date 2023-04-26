@@ -142,7 +142,6 @@ The video shows that Arbitrage is the practice of buying and selling assets in d
 Overall, it is a useful resource for anyone interested in learning more about the emerging field of DeFi and the opportunities and challenges it presents.
 
 --
-
 另外Kovan不支援只能用Goerli，影片說要1ETH，但Goerli一天只給0.2，不先前累積根本沒法做。
 
 #### 1. Install Brownie and python 
@@ -166,23 +165,11 @@ py -m pipx ensurepath
 `pipx install eth-brownie`
 
 ![](https://i.imgur.com/ch4xqre.png)
-在這步卡住，確定有設定環境變數，
+修改完環境變數後成功
+![](https://i.imgur.com/0ax7Run.png)
 
-
-```
-git clone https://github.com/eth-brownie/brownie.git
-cd brownie
-python3 setup.py install
-```
 
 --
-![](https://i.imgur.com/YriwwQ4.png)
-I installed certain dependencies in advance with these commands --
-```
-python -m pip install yarl
-python -m pip install bitarray
-python -m pip install cytoolz
-```
 
 
 #### 2. `git clone https://github.com/PatrickAlphaC/aave-flashloan-mix `
@@ -209,3 +196,29 @@ Step3: Copy the new API key.
 
 Copy the PRIVATE_KEY
 ![](https://i.imgur.com/Pi00Fy8.png)
+
+**NOTE:**
+
+1. Add a **0x** to the start of your private key
+1. export change to **set**
+1. If using a Windows system, the .env file name should be changed to **env.bat**.
+![](https://i.imgur.com/PDdGZ8t.png)
+
+#### 4. [docs.aave](https://docs.aave.com/developers/v/2.0/deployed-contracts/deployed-contracts)
+Add relevant network parameters in the `brownie-config.yaml `file and use the **Goerli testnet**
+
+* [aave_lending_pool_v2 address](https://goerli.etherscan.io/address/0x5E52dEc931FFb32f609681B8438A51c675cc232d#code)
+* [WETH Token address](https://goerli.etherscan.io/token/0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6)
+
+![](https://i.imgur.com/wdDtXfU.png)
+
+5. Run
+
+`env.bat && brownie run scripts\get_weth.py --network goerli && brownie run scripts\deployment_v2.py --network goerli && brownie run scripts\run_flash_loan_v2.py --network goerli`
+
+
+![](https://i.imgur.com/XUAI5Hl.png)
+目前卡在這
+
+
+
