@@ -1,0 +1,33 @@
+# use Ganache's forked mainnet mode as the default network
+networks:
+  default: mainnet-fork
+
+# automatically fetch contract sources from Etherscan
+autofetch_sources: True
+
+# require OpenZepplin Contracts v3.0.0
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@3.0.0
+
+# path remapping to support OpenZepplin imports with NPM-style path
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.0.0"
+networks:
+  default: mainnet-fork
+  mainnet-fork:
+    aave_lending_pool_v2: "0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5"
+    weth: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+  goerli:
+    aave_lending_pool_v2: "0x5E52dEc931FFb32f609681B8438A51c675cc232d"
+    weth: "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6"
+    gas_limit: 4465030,
+  mainnet:
+    aave_lending_pool_v2: "0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5"
+    weth: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+wallets:
+  from_key: "e6ca39b9d31f1c1f3288144cd1c8ef97e37ff8b6a5c89c716a6041fd5506e69b"
+  from_mnemonic: "clutch fatigue disagree exchange liar silk plunge churn lobster either sign fortune"
+settings:
+  gas_limit: "100000000000"
