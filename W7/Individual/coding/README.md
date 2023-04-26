@@ -16,13 +16,17 @@
    ![](2023-04-26-00-55-02.png)
 4. 將[此專案](https://github.com/PatrickAlphaC/aave-flashloan-mix) clone 到本地端
 5. 註冊 [Infura](https://infura.io/) 並產生 API key，將 API key 填入到 `.env` 這個檔案的 `WEB3_INFURA_PROJECT_ID` 這個參數中
-6. 註冊 [Etherscan](https://etherscan.io/) 並產生 API key，將 API key 填入到 `.env` 這個檔案的 `ETHERSCAN_TOKEN` 這個參數中
-7. 按照順序執行下列指令
+   註冊 [Etherscan](https://etherscan.io/) 並產生 API key，將 API key 填入到 `.env` 這個檔案的 `ETHERSCAN_TOKEN` 這個參數中
+![](2023-04-26-20-55-08.png)
+6. 按照順序執行下列指令
    ```
    brownie run scripts\get_weth.py --network kovan
    brownie run scripts\deployment_v2.py --network kovan
    brownie run scripts\run_flash_loan_v2.py --network kovan
    ```
+
+#### Questions
+* kovan testnet 已經不能使用，不知道該如何切換 testnet 或是使用 Localhost 當作 testnet
 
 ### Task-02
 * [加分作業，下次上課會講但建議先看] Follow 此教學創建一個模板專案，並提供完成截圖，熟悉此專案架構，若對 React 框架還不熟悉的同學也可以先去了解 React：[https://www.rainbowkit.com/docs/installation](https://www.rainbowkit.com/docs/installation)
