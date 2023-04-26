@@ -39,6 +39,8 @@
    因為我的 Goerli 測試網的 ETH 儲備不足，無法繼續往下走，但至少所有參數都有抓到，並且順利執行，待測試幣充足，再來補上後續。
    ![](2023-04-26-22-52-54.png)
 
+* [source code](aave-flashloan-mix.zip)
+
 ### Task-02
 * [加分作業，下次上課會講但建議先看] Follow 此教學創建一個模板專案，並提供完成截圖，熟悉此專案架構，若對 React 框架還不熟悉的同學也可以先去了解 React：[https://www.rainbowkit.com/docs/installation](https://www.rainbowkit.com/docs/installation)
 * 完成截圖
