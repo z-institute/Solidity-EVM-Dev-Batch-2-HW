@@ -60,6 +60,23 @@ Collaborate to complete all Ethernaut challenges : https://ethernaut.openzeppeli
 ### Excellent group homework
 - [Group 3](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W6/Group_coding) (Vera, YI JUN LIN, CHIH HSIEN CHEN)
 
+## Week 7 : Solidity Smart Contract Advanced
+### Reading
+- https://rekt.news/leaderboard/
+- https://www.youtube.com/watch?v=mCJUhnXQ76s
+- https://www.smartcontractresearch.org/t/research-summary-attacking-the-defi-ecosystem-with-flash-loans-for-fun-and-profit/260
+- https://chain.link/education-hub/flash-loans
+- https://medium.com/coinmonks/get-everything-for-nothing-how-to-use-flash-loans-to-launch-an-arbitrage-d8520827cbfe
+### Coding
+Follow the example in this video, push the project to Github, document the detailed steps with screenshots, and describe the working principle and implementation experience (including any difficulties encountered and how they were solved) : https://www.youtube.com/watch?v=Aw7yvGFtOvI&feature=youtu.be
+### Group homework
+Complete the User Flow Chart for the graduation project using tools such as https://whimsical.com/ or others.
+### Excellent homework
+- Z23034005 [(Vera)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W7/Individual)
+- Z23034006 [(YI JUN LIN)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034006/W7/Individual)
+### Excellent group homework
+- [Group 3](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W7/Group_coding) (Vera, YI JUN LIN, CHIH HSIEN CHEN)
+
 # Solidity-EVM-Dev-Batch-2-HW
 ## Usage
 1. Please clone your own brach and operate on it, the following commands are for your reference.
