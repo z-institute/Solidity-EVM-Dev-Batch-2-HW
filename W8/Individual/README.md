@@ -1,7 +1,7 @@
 # 個人作業
 
 
-## 看著 Quiz2 的合約（[在此](https://github.com/z-institute/Quiz/blob/main/contracts/Quiz_02.sol)），嘗試用 Hardhat 框架寫出 Quiz2 合約的 test，並跑 npx hardhat coverage，把測試涵蓋率提高到 100%
+## Quiz2 的[合約](https://github.com/z-institute/Quiz/blob/main/contracts/Quiz_02.sol)，用 Hardhat 框架寫出 test，並跑 npx hardhat coverage，把測試涵蓋率提高到 100%
 * 遇到困難的話可以看答案，但建議先自己嘗試後，真的想不到再對照：[https://github.com/z-institute/Quiz/blob/main/test/Quiz_02.test.js](https://github.com/z-institute/Quiz/blob/main/test/Quiz_02.test.js)
 
 --
@@ -53,7 +53,7 @@ describe("Quiz 2 test", async function () {
     )
   });
 
-  // 測試給他一定的錢，查看mint的數量
+  // 測試給他一定的錢，查看 mint 的數量
   it("Should be able to mint to specific account", async function () {
     await contract.mint(owner.address, 0, {value: ethers.utils.parseEther("0.1")})
     expect(await contract.ownerOf(0)).to.equal(owner.address);
