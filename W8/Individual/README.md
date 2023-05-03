@@ -85,19 +85,10 @@ function App() {
 
 
 ---
-[Quiz2 的合約](https://github.com/z-institute/Quiz/blob/main/contracts/Quiz_02.sol)
+[[Quiz2 的合約](https://github.com/z-institute/Quiz/blob/main/contracts/Quiz_02.sol)
 
-1.Install
 
-`npm install --save-dev solidity-coverage`
-
-2.新增 hardhat.config.ts 檔案
-
-`import "solidity-coverage";`
-
-3.開始寫Quiz_02.test.js
-
-4.最後，輸入下面指令，跑出測試結果
+`npm install`
 
 `npx hardhat coverage`  
 
@@ -145,7 +136,7 @@ describe("Quiz 2 test", function () {
 1. 最後，我們使用batchMint()函數向acc1發行一個代幣，然後再次使用expect()方法檢查該代幣的所有權是否已經成功地轉移到了acc1的帳戶。
 
 ## 檢討:
-對照答案後，我發現很容易因為邊看著合約邊打測試code，漏寫了**revert** 和 **support interface** ，新手應避免這錯誤
+第一次跑沒成功，對照答案後，我發現很容易因為邊看著合約邊打測試code，漏寫了**revert** 和 **support interface** 
 ```
   it("Should revert when not enough funds", async function () {
     expect(token.mint(owner.address, 0)).to.be.revertedWith(
@@ -161,13 +152,8 @@ describe("Quiz 2 test", function () {
     expect(await token.supportsInterface("0x00000001"), false);
   });
 ```
-
-![](https://i.imgur.com/RAC36gd.png)
-
-
+在一次後
+![](https://i.imgur.com/cBGc1Hq.png)
 
 
-
-
-
-
+![](https://i.imgur.com/h8jznoW.png)
