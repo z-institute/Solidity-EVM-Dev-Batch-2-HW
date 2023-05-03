@@ -61,3 +61,10 @@ describe("Quiz 2 test", () => {
 });
 
 ```
+
+### hardhat-boilerplate​
+
+- how to run with frontend and contract?
+透過ethers套件，init contract by abi，即可操作合約中的function
+
+![](https://i.imgur.com/YLsWJaV.png)
