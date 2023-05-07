@@ -1,3 +1,4 @@
+# Excellent homework showcase
 The Z Institute provides two month interactive Ethereum developer training course, bringing engineers from web 2.0 to web 3.0. The excellent homeworks of the students are all open sourced. Feel free to share this with interested developers or join our [Discord](https://discord.gg/MTTgzdnXpS) to give us feedback! 
 
 ## Week 2 : Ethereum Basics
@@ -76,6 +77,18 @@ Complete the User Flow Chart for the graduation project using tools such as http
 - Z23034006 [(YI JUN LIN)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034006/W7/Individual)
 ### Excellent group homework
 - [Group 3](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W7/Group_coding) (Vera, YI JUN LIN, CHIH HSIEN CHEN)
+
+## Week 8 : Solidity Smart Contract Test
+### Coding
+1. Based on the Quiz2 contract (https://github.com/z-institute/Quiz/blob/main/contracts/Quiz_02.sol), attempt to write a test for the Quiz2 contract using the Hardhat framework. Then, run npx hardhat coverage and increase the test coverage to 100%.
+2. Run this Hardhat front-end project (https://github.com/NomicFoundation/hardhat-boilerplate) and observe its project structure. In your own words, describe 'How the front-end interacts with the smart contract?
+### Group homework
+Complete the first version of the smart contract for the graduation project!! Also, write some basic smart contract function tests.
+### Excellent homework
+- Z23034005 [(Vera)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W8/Individual)
+- Z23034006 [(YI JUN LIN)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034006/W8/Individual)
+### Excellent group homework
+- [Group 3](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W8/Group_coding) (Vera, YI JUN LIN, CHIH HSIEN CHEN)
 
 # Solidity-EVM-Dev-Batch-2-HW
 ## Usage
