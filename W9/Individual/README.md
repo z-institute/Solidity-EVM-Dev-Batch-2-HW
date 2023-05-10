@@ -7,10 +7,10 @@
 ![](3.png)
 
 畫面會自動跳到Dashboard
-![](https://hackmd.io/_uploads/B1zLaCOVn.png)
+![](4.png)
 接著到**APIKEYS**連接錢包並簽署消息以獲取 API KEY
-![](https://hackmd.io/_uploads/HklFCRO4h.png)
-![](https://hackmd.io/_uploads/BkW1gJF43.png)
+![](5.png)
+![](6.png)
 
 ### Creating the Application
 
