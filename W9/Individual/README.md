@@ -91,10 +91,12 @@ RainbowKit is a React library that makes it easy to add wallet connection to you
 
 ```
 npm init @rainbow-me/rainbowkit@latest
-```![](12.png)
+```
+![](12.png)
 
 
 Run
+
 ```
 cd my-rainbowkit-app
 
