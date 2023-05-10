@@ -6,7 +6,7 @@
 
 --
 
-### Rainbowkit + WAGMI
+## Rainbowkit + WAGMI
 
 ```
 npm init @rainbow-me/rainbowkit@latest
@@ -86,11 +86,10 @@ const App = () => {
 
 ---
 
-### Web3Modal
+## Web3Modal
 
---
 
-到[這裡](https://cloud.walletconnect.com/app)連結完錢包
+到[這裡](https://cloud.walletconnect.com/app)連結錢包
 
 ![](./../images/4.png)
 
@@ -118,9 +117,8 @@ yarn start
 
 ---
 
-### Manifold
+## Manifold
 
---
 
 ```
 npm install https://github.com/manifoldxyz/creator-core-solidity.git
@@ -223,8 +221,9 @@ ____   _________________________    _____
  
 ## [Account Abstraction](https://blog.jarrodwatts.com/i-fixed-web3-onboarding)
  
+--
  
-我需要先去[這裡](https://thirdweb.com/explore)建立我的 Smart Wallet 
+先去[這裡](https://thirdweb.com/explore)建立我的 Smart Wallet 
 
 ![](./../images/17.png)
 
@@ -232,11 +231,9 @@ ____   _________________________    _____
 
 ![](./../images/18.png)
 
-![](./../images/19.png)
+成功
 
 ![](./../images/20.png)
-
-成功
 
 ![](./../images/21.png)
 
