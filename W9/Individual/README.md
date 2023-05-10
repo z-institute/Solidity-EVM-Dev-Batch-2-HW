@@ -1,10 +1,10 @@
 ## [Creating a Smart Wallet Factory Contract](https://blog.jarrodwatts.com/i-fixed-web3-onboarding)
 選擇[Simple Wallet Factory (beta)](https://thirdweb.com/thirdweb.eth/AccountFactory)，連結錢包，點擊`Deploy now`
-![](https://hackmd.io/_uploads/HJYaDAONh.png)
+![](1.png)
 連結 Goerli以Contract deployment
-![](https://hackmd.io/_uploads/H1KBd0_E2.png)
+![](2.png)
 
-![](https://hackmd.io/_uploads/S1Ce5COV3.png)
+![](3.png)
 
 畫面會自動跳到Dashboard
 ![](https://hackmd.io/_uploads/B1zLaCOVn.png)
