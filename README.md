@@ -90,6 +90,18 @@ Complete the first version of the smart contract for the graduation project!! Al
 ### Excellent group homework
 - [Group 3](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W8/Group_coding) (Vera, YI JUN LIN, CHIH HSIEN CHEN)
 
+## Week 9 : Integrating Front-end Libraries
+### Coding
+1. Follow this document and write down the steps, providing screenshots upon completion : https://hackmd.io/@zinstitute/frontend-lib
+2. Use Manifold studio to do something (such as uploading an NFT image and creating an NFT mint site), write down the steps, provide screenshots upon completion, and share the website link.
+### Group homework
+Continue to work on the smart contract for the graduation project and start designing the front-end interface!! Also, write some basic smart contract function tests.
+### Excellent homework
+- Z23034005 [(Vera)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034005/W9/Individual)
+- Z23034006 [(YI JUN LIN)](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-HW/tree/Z23034006/W9/Individual)
+### Excellent group homework
+- [Group 3](https://github.com/z-institute/Solidity-EVM-Dev-Batch-2-Group-3) (Vera, YI JUN LIN, CHIH HSIEN CHEN)
+
 # Solidity-EVM-Dev-Batch-2-HW
 ## Usage
 1. Please clone your own brach and operate on it, the following commands are for your reference.
